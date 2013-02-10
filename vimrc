@@ -75,17 +75,17 @@ let s:uname = substitute(system('uname'), '\n', '', '')
 """"""""""""""""""""""""""""""""""""""""
 " Settings
 """"""""""""""""""""""""""""""""""""""""
-set autoindent	" 自動縮排
-set hlsearch	" 高亮度搜尋
-set number		" 行號
-set tabstop=4	" tab=4
-set shiftwidth=4 " << , >> = 4
-set scrolloff=3 " 留三行
-set cursorline	" 高亮度所在行
-set ruler		" 狀態列
-set laststatus=2 " 狀態列行數
+set autoindent
+set hlsearch
+set relativenumber
+set tabstop=4
+set shiftwidth=4
+set scrolloff=3
+set cursorline
+set ruler
+set laststatus=2
 " set statusline " 狀態列格式
-set vb			" viusalbel
+set visualbell
 
 set fileencodings=utf-8,big5,gbk,latin1
 set fileformats=unix,dos
@@ -108,10 +108,10 @@ if s:uname == "Darwin"
 	vmap <C-l> $y:call system("pbcopy", getreg("\""))<CR>
 	nmap <C-a> ggyG:call system("pbcopy", getreg("\""))<CR>
 
-	if exists('&ai')
-		nmap <C-m> ":set noai<CR>:call setreg("\"",system("pbpaste"))<CR>:set ai<CR>p"
+	if &ai
+		nmap <C-v> :set noai<CR>:call setreg("\"",system("pbpaste"))<CR>:set ai<CR>p
 	else
-		nmap <C-m> ":call setreg("\"",system("pbpaste"))<CR>"
+		nmap <C-v> :call setreg("\"",system("pbpaste"))<CR>
 	endif
 endif
 
