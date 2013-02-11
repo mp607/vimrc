@@ -23,7 +23,7 @@ Bundle 'Lokaltog/vim-easymotion'
 Bundle 'lazywei/vim-doc-tw'
 " 註解
 Bundle 'scrooloose/nerdcommenter'
-" Bundle 'Lokaltog/vim-powerline'
+Bundle 'Lokaltog/vim-powerline'
 Bundle 'plasticboy/vim-markdown'
 Bundle 'Yggdroot/indentLine'
 Bundle 'xuhdev/SingleCompile'
