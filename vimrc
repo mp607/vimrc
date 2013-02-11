@@ -67,11 +67,6 @@ filetype plugin indent on     " required!
 " NOTE: comments after Bundle command are not allowed..
 
 """"""""""""""""""""""""""""""""""""""""
-" vars
-""""""""""""""""""""""""""""""""""""""""
-let s:uname = substitute(system('uname'), '\n', '', '')
-
-""""""""""""""""""""""""""""""""""""""""
 " Settings
 """"""""""""""""""""""""""""""""""""""""
 set autoindent
@@ -102,7 +97,7 @@ color desert
 " Copy & Paste (Only on Mac)
 """"""""""""""""""""""""""""""""""""""""
 " Usage: 
-if s:uname == "Darwin"
+if has('mac')
 	vmap <C-c> y:call system("pbcopy", getreg("\""))<CR>
 	vmap <C-l> $y:call system("pbcopy", getreg("\""))<CR>
 	nmap <C-a> ggyG:call system("pbcopy", getreg("\""))<CR>
@@ -131,12 +126,12 @@ endif
 let g:gist_detect_filetype = 1
 let g:gist_open_browser_after_post = 1
 
-if s:uname == "Darwin"
+if has('mac')
 	let g:gist_clip_command = 'pbcopy'
-elseif s:uname == "Linux"
-	let g:gist_clip_command = 'xclip -selection clipboard'
-"elseif has('win32') || has('win64') || has('winunix')
-"	let g:gist_clip_command = 'putclip'
+"elseif has('unix')
+	"let g:gist_clip_command = 'xclip -selection clipboard'
+elseif has('win32') || has('win64') || has('winunix')
+	let g:gist_clip_command = 'putclip'
 endif
 
 """"""""""""""""""""""""""""""""""""""""
@@ -151,7 +146,7 @@ let g:snippets_dir = "~/.vim/bundle/snippets/"
 """"""""""""""""""""""""""""""""""""""""
 " Usage: <C-p>
 let g:ctrlp_working_path_mode = 'ra'
-if s:uname == "Drawin" || s:uname == "Lunux" || s:uname == "FreeBSD"
+if has('unix')
 	set wildignore+=*.o,*.out,*.so,*.swp,*.zip	" MacOSX/Linux
 else
 	set wildignore+=*.swp,*.zip,*.exe	" Windows
