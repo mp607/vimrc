@@ -3,6 +3,8 @@
 ## How to install
 __________
 
+### 1
+
 Use curl (for Mac OS X):
 
 	curl -o - https://raw.github.com/mp607/vimrc/master/install.sh | sh
@@ -14,6 +16,12 @@ or wget (for Linux):
 or fetch (for FreeBSD):
 
 	fetch -o - https://raw.github.com/mp607/vimrc/master/install.sh | sh
+
+### 2
+
+Install vim Plug-ins
+
+	vim +BundleInstall +qall
 
 ## Uninstall
 __________

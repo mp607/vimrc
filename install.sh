@@ -18,7 +18,7 @@ ln -s $VIMFILES/vimrc $VIMRC
 
 # Install vundle
 git clone http://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
-vim +BundleInstall +qall
+#vim +BundleInstall +qall
 
 # if Mac Install "Monaco-Powerline.otf"
 if [ `uname` = "Darwin" ]; then
@@ -27,5 +27,5 @@ if [ `uname` = "Darwin" ]; then
 	echo "You can delete 1838072 dir now"
 fi
 
-echo "Install Complete"
-
+echo "Download complete."
+echo "Use \"vim +BundleInstall +qall\" command install all plug-ins"
