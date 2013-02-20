@@ -21,11 +21,11 @@ git clone http://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
 #vim +BundleInstall +qall
 
 # if Mac Install "Monaco-Powerline.otf"
-if [ `uname` = "Darwin" ]; then
-	git clone https://gist.github.com/1838072.git $VIMFILES
-	open "$VIMFILES/Monaco-Powerline.otf"
-	echo "You can delete 1838072 dir now"
-fi
+#if [ `uname` = "Darwin" ]; then
+	#git clone https://gist.github.com/1838072.git $VIMFILES
+	#open "$VIMFILES/Monaco-Powerline.otf"
+	#echo "You can delete 1838072 dir now"
+#fi
 
 echo "Download complete."
 echo "Use \"vim +BundleInstall +qall\" command install all plug-ins"
