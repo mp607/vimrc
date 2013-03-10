@@ -32,6 +32,7 @@ Bundle 'xolox/vim-notes'
 " vim-scripts repos
 Bundle 'WebAPI.vim'
 Bundle 'Gist.vim'
+Bundle 'airblade/vim-gitgutter'
 " 自動補完
 Bundle 'snipMate'
 Bundle 'mp607/snippets'
@@ -158,3 +159,17 @@ endif
 """"""""""""""""""""""""""""""""""""""""
 set lcs =tab:\|\ 
 "set list
+
+""""""""""""""""""""""""""""""""""""""""
+" vim-gitgutter
+""""""""""""""""""""""""""""""""""""""""
+" Usage: turn off with :GitGutterDisable
+"        turn on with :GitGutterEnable
+"        toggle with :GitGutterToggle
+"
+"        turn on with :GitGutterLineHighlightsEnable
+"        turn off with :GitGutterLineHighlightsDisable
+"        toggle with :GitGutterLineHighlightsToggle
+"
+"        jump to next hunk: :GitGutterNextHunk
+"        jump to previous hunk: :GitGutterPrevHunk
