@@ -51,6 +51,7 @@ Bundle 'ack.vim'
 Bundle 'ctrlp.vim'
 " html
 Bundle 'ZenCoding.vim'
+Bundle 'terryma/vim-multiple-cursors'
 " Bundle 'c.vim'
 " non github repos
 " Bundle 'git://git.wincent.com/command-t.git'
