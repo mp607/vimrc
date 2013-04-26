@@ -105,9 +105,9 @@ if has('mac')
 	nmap <C-a> ggyG:call system("pbcopy", getreg("\""))<CR>
 
 	if &ai
-		nmap <C-v> :set noai<CR>:call setreg("\"",system("pbpaste"))<CR>:set ai<CR>p
+		nmap <C-x> :set noai<CR>:call setreg("\"",system("pbpaste"))<CR>:set ai<CR>p
 	else
-		nmap <C-v> :call setreg("\"",system("pbpaste"))<CR>
+		nmap <C-x> :call setreg("\"",system("pbpaste"))<CR>
 	endif
 endif
 
