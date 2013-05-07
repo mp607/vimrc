@@ -49,6 +49,7 @@ Bundle 'cocoa.vim'
 Bundle 'ack.vim'
 " Search
 Bundle 'ctrlp.vim'
+Bundle 'grep.vim'
 " html
 Bundle 'ZenCoding.vim'
 Bundle 'terryma/vim-multiple-cursors'
