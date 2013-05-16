@@ -12,6 +12,8 @@ Bundle 'gmarik/vundle'
 """"""""""""""""""""""""""""""""""""""""
 set autoindent
 set hlsearch
+set undofile
+set undodir=~/.vim/undo
 set relativenumber
 set backspace=2
 set scrolloff=3

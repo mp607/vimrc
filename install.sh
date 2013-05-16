@@ -16,6 +16,9 @@ git clone http://github.com/mp607/vimrc $VIMFILES
 ln -s $VIMFILES/vimrc $VIMRC
 # ln -s $VIMFILES/gvimrc $GVIMRC
 
+# undodir
+mkdir $VIMFILES/undo
+
 # Install vundle
 git clone http://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
 #vim +BundleInstall +qall
