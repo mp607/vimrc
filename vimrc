@@ -162,8 +162,6 @@ Bundle 'scrooloose/syntastic'
 Bundle 'plasticboy/vim-markdown'
 Bundle 'xuhdev/SingleCompile'
 Bundle 'xolox/vim-notes'
-" 剪貼簿
-Bundle 'fakeclip'
 " 提示
 Bundle 'AutoComplPop'
 " 語法檢查
