@@ -3,71 +3,9 @@
 """"""""""""""""""""""""""""""""""""""""
 set nocompatible	" be iMproved
 filetype off		" required!
-
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
-
-" let Vundle manage Vundle
-" required! 
 Bundle 'gmarik/vundle'
-
-" My Bundles here:
-"
-" original repos on github
-" git support
-Bundle 'tpope/vim-fugitive'
-" 語法檢查
-Bundle 'scrooloose/syntastic'
-Bundle 'Lokaltog/vim-easymotion'
-" doc
-Bundle 'lazywei/vim-doc-tw'
-" 註解
-Bundle 'scrooloose/nerdcommenter'
-Bundle 'Lokaltog/vim-powerline'
-Bundle 'plasticboy/vim-markdown'
-Bundle 'Yggdroot/indentLine'
-Bundle 'xuhdev/SingleCompile'
-Bundle 'xolox/vim-notes'
-
-" vim-scripts repos
-Bundle 'WebAPI.vim'
-Bundle 'Gist.vim'
-Bundle 'airblade/vim-gitgutter'
-" 自動補完
-Bundle 'snipMate'
-Bundle 'mp607/snippets'
-" 剪貼簿
-Bundle 'fakeclip'
-Bundle 'L9'
-" 提示
-Bundle 'AutoComplPop'
-" 語法檢查
-Bundle 'FuzzyFinder'
-Bundle 'Markdown'
-Bundle 'cocoa.vim'
-" grep
-Bundle 'ack.vim'
-" Search
-Bundle 'ctrlp.vim'
-Bundle 'grep.vim'
-" html
-Bundle 'ZenCoding.vim'
-Bundle 'terryma/vim-multiple-cursors'
-" Bundle 'c.vim'
-" non github repos
-" Bundle 'git://git.wincent.com/command-t.git'
-" ...
-
-filetype plugin indent on     " required!
-"
-" Brief help
-" :BundleList          - list configured bundles
-" :BundleInstall(!)    - install(update) bundles
-" :BundleSearch(!) foo - search(or refresh cache first) for foo
-" :BundleClean(!)      - confirm(or auto-approve) removal of unused bundles
-"
-" see :h vundle for more details or wiki for FAQ
-" NOTE: comments after Bundle command are not allowed..
 
 """"""""""""""""""""""""""""""""""""""""
 " Settings
@@ -75,8 +13,6 @@ filetype plugin indent on     " required!
 set autoindent
 set hlsearch
 set relativenumber
-set tabstop=4
-set shiftwidth=4
 set backspace=2
 set scrolloff=3
 set cursorline
@@ -84,12 +20,25 @@ set ruler
 set laststatus=2
 " set statusline " 狀態列格式
 set visualbell
+" auto source vimrc
+autocmd! bufwritepost .vimrc source ~/.vimrc
 
+""""""""""""""""""""""""""""""""""""""""
+" tab
+""""""""""""""""""""""""""""""""""""""""
+set tabstop=4
+set shiftwidth=4
+
+""""""""""""""""""""""""""""""""""""""""
+" file
+""""""""""""""""""""""""""""""""""""""""
 set fileencodings=utf-8,big5,gbk,latin1
 set fileformats=unix,dos
 
-" auto source vimrc
-autocmd! bufwritepost .vimrc source ~/.vimrc
+""""""""""""""""""""""""""""""""""""""""
+" filetypes
+""""""""""""""""""""""""""""""""""""""""
+filetype plugin indent on
 
 """"""""""""""""""""""""""""""""""""""""
 " Colors
@@ -116,17 +65,22 @@ endif
 """"""""""""""""""""""""""""""""""""""""
 " powerline
 """"""""""""""""""""""""""""""""""""""""
+Bundle 'Lokaltog/vim-powerline'
 "let g:Powerline_symbols = 'fancy'
 
 """"""""""""""""""""""""""""""""""""""""
 " easymotion
 """"""""""""""""""""""""""""""""""""""""
-" Usage: \\w
+" Usage: <leader>w
+Bundle 'Lokaltog/vim-easymotion'
 
 """"""""""""""""""""""""""""""""""""""""
 " Gist
 """"""""""""""""""""""""""""""""""""""""
 " Usage: Gist 
+Bundle 'WebAPI.vim'
+Bundle 'Gist.vim'
+
 let g:gist_detect_filetype = 1
 let g:gist_open_browser_after_post = 1
 
@@ -141,6 +95,8 @@ endif
 """"""""""""""""""""""""""""""""""""""""
 " snipMate
 """"""""""""""""""""""""""""""""""""""""
+Bundle 'snipMate'
+Bundle 'mp607/snippets'
 let g:snippets_dir = "~/.vim/bundle/snippets/"
 "au BufRead *.php set ft=php.html
 "au BufNewFile *.php set ft=php.html
@@ -149,6 +105,7 @@ let g:snippets_dir = "~/.vim/bundle/snippets/"
 " ctrlp
 """"""""""""""""""""""""""""""""""""""""
 " Usage: <C-p>
+Bundle 'ctrlp.vim'
 let g:ctrlp_working_path_mode = 'ra'
 if has('unix')
 	set wildignore+=*.o,*.out,*.so,*.swp,*.zip	" MacOSX/Linux
@@ -159,8 +116,15 @@ endif
 """"""""""""""""""""""""""""""""""""""""
 " indentLine
 """"""""""""""""""""""""""""""""""""""""
+Bundle 'Yggdroot/indentLine'
 set lcs =tab:\|\ 
 "set list
+
+""""""""""""""""""""""""""""""""""""""""
+" fugitive
+""""""""""""""""""""""""""""""""""""""""
+" Usage: Gdiff, Gstatus, Gcommit, Glog
+Bundle 'tpope/vim-fugitive'
 
 """"""""""""""""""""""""""""""""""""""""
 " vim-gitgutter
@@ -175,3 +139,40 @@ set lcs =tab:\|\
 "
 "        jump to next hunk: :GitGutterNextHunk
 "        jump to previous hunk: :GitGutterPrevHunk
+Bundle 'airblade/vim-gitgutter'
+
+""""""""""""""""""""""""""""""""""""""""
+" nerdcommenter
+""""""""""""""""""""""""""""""""""""""""
+" Usage: <leader>cc
+"        <leader>cu
+"        <leader>cm
+Bundle 'scrooloose/nerdcommenter'
+
+""""""""""""""""""""""""""""""""""""""""
+" vim-multiple-cursors
+""""""""""""""""""""""""""""""""""""""""
+" Usage: C-n
+Bundle 'terryma/vim-multiple-cursors'
+
+" 語法檢查
+Bundle 'scrooloose/syntastic'
+Bundle 'plasticboy/vim-markdown'
+Bundle 'xuhdev/SingleCompile'
+Bundle 'xolox/vim-notes'
+" 剪貼簿
+Bundle 'fakeclip'
+" 提示
+Bundle 'AutoComplPop'
+" 語法檢查
+Bundle 'L9'
+Bundle 'FuzzyFinder'
+Bundle 'cocoa.vim'
+" grep
+Bundle 'ack.vim'
+Bundle 'grep.vim'
+" html
+Bundle 'ZenCoding.vim'
+Bundle 'lazywei/vim-doc-tw'
+" Bundle 'c.vim'
+" Bundle 'git://git.wincent.com/command-t.git'
