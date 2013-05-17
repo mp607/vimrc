@@ -18,6 +18,7 @@ set relativenumber
 set backspace=2
 set scrolloff=3
 set cursorline
+set showcmd
 set ruler
 set laststatus=2
 " set statusline " 狀態列格式
