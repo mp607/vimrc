@@ -161,7 +161,6 @@ Bundle 'terryma/vim-multiple-cursors'
 Bundle 'scrooloose/syntastic'
 Bundle 'plasticboy/vim-markdown'
 Bundle 'xuhdev/SingleCompile'
-Bundle 'xolox/vim-notes'
 " 提示
 Bundle 'AutoComplPop'
 " 語法檢查
