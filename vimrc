@@ -157,6 +157,12 @@ Bundle 'scrooloose/nerdcommenter'
 " Usage: C-n
 Bundle 'terryma/vim-multiple-cursors'
 
+""""""""""""""""""""""""""""""""""""""""
+" surround
+""""""""""""""""""""""""""""""""""""""""
+" Usage: cs"', ts"
+Bundle 'tpope/vim-surround'
+
 " 語法檢查
 Bundle 'scrooloose/syntastic'
 Bundle 'plasticboy/vim-markdown'
