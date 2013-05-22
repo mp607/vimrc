@@ -164,6 +164,15 @@ Bundle 'terryma/vim-multiple-cursors'
 " Usage: cs"', ts"
 Bundle 'tpope/vim-surround'
 
+""""""""""""""""""""""""""""""""""""""""
+" Dash (Only on Mac)
+""""""""""""""""""""""""""""""""""""""""
+" Usage: :Dash[!] [TERM] [KEYWORD]
+if has('mac')
+	Bundle 'rizzatti/funcoo.vim'
+	Bundle 'rizzatti/dash.vim'
+endif
+
 " 語法檢查
 Bundle 'scrooloose/syntastic'
 Bundle 'plasticboy/vim-markdown'
