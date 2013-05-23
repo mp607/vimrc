@@ -30,5 +30,9 @@ git clone http://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
 	#echo "You can delete 1838072 dir now"
 #fi
 
+read -p "Please input your github Username [default: $LOGNAME]: " GITHUBUSER
+[ -z $USER ] && GITHUBUSER=$LOGNAME
+git config --global github.user $GITHUBUSER
+
 echo "Download complete."
 echo "Use \"vim +BundleInstall +qall\" command install all plug-ins"
