@@ -39,7 +39,7 @@ set shiftwidth=4
 """"""""""""""""""""""""""""""""""""""""
 " file
 """"""""""""""""""""""""""""""""""""""""
-set fileencodings=utf-8,big5,gbk,latin1
+set fileencodings=utf-8,big5,utf-16,gbk,latin1
 set fileformats=unix,dos
 
 """"""""""""""""""""""""""""""""""""""""
