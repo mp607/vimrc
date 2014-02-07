@@ -24,6 +24,7 @@ set scrolloff=3
 set cursorline
 set showcmd
 set ruler
+set mouse=a
 set laststatus=2
 " set statusline " 狀態列格式
 set visualbell
