@@ -21,7 +21,6 @@ mkdir $VIMFILES/undo
 
 # Install vundle
 git clone http://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
-#vim +BundleInstall +qall
 
 # if Mac Install "Monaco-Powerline.otf"
 #if [ `uname` = "Darwin" ]; then
@@ -30,10 +29,6 @@ git clone http://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
 	#echo "You can delete 1838072 dir now"
 #fi
 
-# Set Gist
-read -p "Please input your github Username [default: $LOGNAME]: " GITHUBUSER
-[ -z $GITHUBUSER ] && GITHUBUSER=$LOGNAME
-git config --global github.user $GITHUBUSER
-
 echo "Download complete."
-echo "Use \"vim +BundleInstall +qall\" command install all plug-ins"
+echo "Use \"vim +BundleInstall +qall\" command install all plug-ins."
+echo "Or use ~/.vim/setup.sh to do more settings."
