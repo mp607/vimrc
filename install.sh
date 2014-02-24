@@ -10,7 +10,8 @@ DATE=`date "+%Y-%m-%d %H:%M:%S"`
 [ -e $VIMFILES ] && mv $VIMFILES "$VIMFILES.bak.$DATE" && echo "mv $VIMFILES $VIMFILES.bak.$DATE"
 
 # Install vimrcs
-git clone http://github.com/mp607/vimrc $VIMFILES
+echo "Installing vimrc ..."
+git clone -q http://github.com/mp607/vimrc $VIMFILES
 
 # Linking vimrc
 ln -s $VIMFILES/vimrc $VIMRC
@@ -20,7 +21,8 @@ ln -s $VIMFILES/vimrc $VIMRC
 mkdir $VIMFILES/undo
 
 # Install vundle
-git clone http://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
+echo "Installing vundle ..."
+git clone -q http://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
 
 # if Mac Install "Monaco-Powerline.otf"
 #if [ `uname` = "Darwin" ]; then
