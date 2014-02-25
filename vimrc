@@ -89,8 +89,8 @@ Bundle 'Lokaltog/vim-easymotion'
 " Gist
 """"""""""""""""""""""""""""""""""""""""
 " Usage: Gist 
-Bundle 'WebAPI.vim'
-Bundle 'Gist.vim'
+Bundle 'mattn/webapi-vim'
+Bundle 'mattn/gist-vim'
 
 let g:gist_detect_filetype = 1
 let g:gist_open_browser_after_post = 1
