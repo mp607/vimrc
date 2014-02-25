@@ -63,7 +63,7 @@ color desert
 "        ^x paste and don't worry about the autoindent
 if has('mac')
 	vmap <C-c> y:call system("pbcopy", getreg("\""))<CR>
-	vmap <C-l> $y:call system("pbcopy", getreg("\""))<CR>
+	nmap <C-l> y$:call system("pbcopy", getreg("\""))<CR>
 	nmap <C-a> ggyG:call system("pbcopy", getreg("\""))<CR>
 
 	if &ai
