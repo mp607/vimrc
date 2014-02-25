@@ -57,7 +57,10 @@ color desert
 """"""""""""""""""""""""""""""""""""""""
 " Copy & Paste (Only on Mac)
 """"""""""""""""""""""""""""""""""""""""
-" Usage: 
+" Usage: ^c copy selection
+"        ^l copy to the end of line
+"        ^a copy all this file
+"        ^x paste and don't worry about the autoindent
 if has('mac')
 	vmap <C-c> y:call system("pbcopy", getreg("\""))<CR>
 	vmap <C-l> $y:call system("pbcopy", getreg("\""))<CR>
