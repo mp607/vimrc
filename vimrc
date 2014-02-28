@@ -64,7 +64,7 @@ Bundle 'Lokaltog/vim-powerline'
 """"""""""""""""""""""""""""""""""""""""
 " easymotion
 """"""""""""""""""""""""""""""""""""""""
-" Usage: <leader>w
+" Usage: <leader><leader>w
 Bundle 'Lokaltog/vim-easymotion'
 
 """"""""""""""""""""""""""""""""""""""""
