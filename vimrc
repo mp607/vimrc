@@ -25,6 +25,7 @@ set cursorline
 set showcmd
 set ruler
 set mouse=a
+set clipboard=unnamed
 set laststatus=2
 " set statusline " 狀態列格式
 set visualbell
@@ -53,25 +54,6 @@ filetype plugin indent on
 """"""""""""""""""""""""""""""""""""""""
 syntax on		" 程式碼上色
 color desert
-
-""""""""""""""""""""""""""""""""""""""""
-" Copy & Paste (Only on Mac)
-""""""""""""""""""""""""""""""""""""""""
-" Usage: ^c copy selection
-"        ^l copy to the end of line
-"        ^a copy all this file
-"        ^x paste and don't worry about the autoindent
-if has('mac')
-	vmap <C-c> y:call system("pbcopy", getreg("\""))<CR>
-	nmap <C-l> y$:call system("pbcopy", getreg("\""))<CR>
-	nmap <C-a> ggyG:call system("pbcopy", getreg("\""))<CR>
-
-	if &ai
-		nmap <C-x> :set noai<CR>:call setreg("\"",system("pbpaste"))<CR>:set ai<CR>p
-	else
-		nmap <C-x> :call setreg("\"",system("pbpaste"))<CR>
-	endif
-endif
 
 """"""""""""""""""""""""""""""""""""""""
 " powerline
