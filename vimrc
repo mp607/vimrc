@@ -111,8 +111,6 @@ endif
 " indentLine
 """"""""""""""""""""""""""""""""""""""""
 Bundle 'Yggdroot/indentLine'
-set lcs =tab:\|\ 
-"set list
 
 """"""""""""""""""""""""""""""""""""""""
 " fugitive
