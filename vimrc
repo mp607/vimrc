@@ -154,6 +154,13 @@ Bundle 'terryma/vim-multiple-cursors'
 Bundle 'tpope/vim-surround'
 
 """"""""""""""""""""""""""""""""""""""""
+" VM Graphviz
+""""""""""""""""""""""""""""""""""""""""
+" Usage: Compiling <leader>ll
+"        Viewing   <leader>lv
+Bundle 'wannesm/wmgraphviz.vim'
+
+""""""""""""""""""""""""""""""""""""""""
 " Dash (Only on Mac)
 """"""""""""""""""""""""""""""""""""""""
 " Usage: :Dash[!] [TERM] [KEYWORD]
