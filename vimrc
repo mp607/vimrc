@@ -160,6 +160,14 @@ Bundle 'tpope/vim-surround'
 Bundle 'wannesm/wmgraphviz.vim'
 
 """"""""""""""""""""""""""""""""""""""""
+" SingleCompile
+""""""""""""""""""""""""""""""""""""""""
+Bundle 'xuhdev/SingleCompile'
+
+nmap <F9> :SCCompile<cr>
+nmap <F10> :SCCompileRun<cr>
+
+""""""""""""""""""""""""""""""""""""""""
 " Dash (Only on Mac)
 """"""""""""""""""""""""""""""""""""""""
 " Usage: :Dash[!] [TERM] [KEYWORD]
@@ -171,7 +179,6 @@ endif
 " 語法檢查
 Bundle 'scrooloose/syntastic'
 Bundle 'plasticboy/vim-markdown'
-Bundle 'xuhdev/SingleCompile'
 " 語法檢查
 Bundle 'FuzzyFinder'
 Bundle 'cocoa.vim'
