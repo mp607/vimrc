@@ -127,16 +127,9 @@ Bundle 'tpope/vim-fugitive'
 """"""""""""""""""""""""""""""""""""""""
 " vim-gitgutter
 """"""""""""""""""""""""""""""""""""""""
-" Usage: turn off with :GitGutterDisable
-"        turn on with :GitGutterEnable
-"        toggle with :GitGutterToggle
-"
-"        turn on with :GitGutterLineHighlightsEnable
-"        turn off with :GitGutterLineHighlightsDisable
-"        toggle with :GitGutterLineHighlightsToggle
-"
-"        jump to next hunk: :GitGutterNextHunk
-"        jump to previous hunk: :GitGutterPrevHunk
+" Usage: ]c          jump to next hunk
+"        [c          jump to prev hank
+"        <leader>hp  show diff
 Bundle 'airblade/vim-gitgutter'
 
 """"""""""""""""""""""""""""""""""""""""
