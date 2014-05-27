@@ -87,11 +87,17 @@ elseif has('win32') || has('win64') || has('winunix')
 endif
 
 """"""""""""""""""""""""""""""""""""""""
-" snipMate
+" autocomplpop + snipmate
 """"""""""""""""""""""""""""""""""""""""
-Bundle 'snipMate'
-Bundle 'mp607/snippets'
+Bundle "MarcWeber/vim-addon-mw-utils"
+Bundle "tomtom/tlib_vim"
+Bundle "garbas/vim-snipmate"
+
+Bundle "mp607/vim-snippets"
+Bundle 'L9'
+Bundle 'othree/vim-autocomplpop'
 let g:snippets_dir = "~/.vim/bundle/snippets/"
+"let g:acp_behaviorSnipmateLength = 1
 "au BufRead *.php set ft=php.html
 "au BufNewFile *.php set ft=php.html
 
@@ -173,10 +179,7 @@ endif
 Bundle 'scrooloose/syntastic'
 Bundle 'plasticboy/vim-markdown'
 Bundle 'xuhdev/SingleCompile'
-" 提示
-Bundle 'AutoComplPop'
 " 語法檢查
-Bundle 'L9'
 Bundle 'FuzzyFinder'
 Bundle 'cocoa.vim'
 " grep
