@@ -97,7 +97,7 @@ Bundle "mp607/vim-snippets"
 Bundle 'L9'
 Bundle 'othree/vim-autocomplpop'
 let g:snippets_dir = "~/.vim/bundle/snippets/"
-"let g:acp_behaviorSnipmateLength = 1
+let g:acp_behaviorSnipmateLength = 1
 "au BufRead *.php set ft=php.html
 "au BufNewFile *.php set ft=php.html
 
