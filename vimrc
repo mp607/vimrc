@@ -56,6 +56,13 @@ syntax on		" 程式碼上色
 color desert
 
 """"""""""""""""""""""""""""""""""""""""
+" Mac
+""""""""""""""""""""""""""""""""""""""""
+if has('mac')
+	au BufEnter /private/tmp/crontab.* setl backupcopy=yes
+endif
+
+""""""""""""""""""""""""""""""""""""""""
 " powerline
 """"""""""""""""""""""""""""""""""""""""
 Bundle 'Lokaltog/vim-powerline'
