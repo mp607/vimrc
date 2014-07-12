@@ -66,7 +66,7 @@ endif
 " powerline
 """"""""""""""""""""""""""""""""""""""""
 Bundle 'Lokaltog/vim-powerline'
-"let g:Powerline_symbols = 'fancy'
+let g:Powerline_symbols = 'fancy'
 
 """"""""""""""""""""""""""""""""""""""""
 " easymotion

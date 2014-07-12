@@ -1,6 +1,6 @@
 """"""""""""""""""""""""""""""""""""""""
-" powerline
+" MacVim
 """"""""""""""""""""""""""""""""""""""""
-if s:uname == "Darwin"
-	set guifont=Monaco\ for\ Powerline:h18
+if has('mac')
+	set guifont=Monaco:h24
 endif
