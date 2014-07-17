@@ -12,7 +12,7 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 
 """"""""""""""""""""""""""""""""""""""""
-" Settings
+" General
 """"""""""""""""""""""""""""""""""""""""
 set autoindent
 set hlsearch
@@ -27,9 +27,8 @@ set ruler
 set mouse=a
 set clipboard=unnamed
 set laststatus=2
-" set statusline " 狀態列格式
 set visualbell
-" auto source vimrc
+" auto reload vimrc
 autocmd! bufwritepost .vimrc source ~/.vimrc
 
 """"""""""""""""""""""""""""""""""""""""
@@ -52,7 +51,7 @@ filetype plugin indent on
 """"""""""""""""""""""""""""""""""""""""
 " Colors
 """"""""""""""""""""""""""""""""""""""""
-syntax on		" 程式碼上色
+syntax on
 color desert
 
 """"""""""""""""""""""""""""""""""""""""
@@ -99,20 +98,19 @@ endif
 Bundle "MarcWeber/vim-addon-mw-utils"
 Bundle "tomtom/tlib_vim"
 Bundle "garbas/vim-snipmate"
-
 Bundle "mp607/vim-snippets"
 Bundle 'L9'
 Bundle 'othree/vim-autocomplpop'
+
 let g:snippets_dir = "~/.vim/bundle/snippets/"
 let g:acp_behaviorSnipmateLength = 1
-"au BufRead *.php set ft=php.html
-"au BufNewFile *.php set ft=php.html
 
 """"""""""""""""""""""""""""""""""""""""
 " ctrlp
 """"""""""""""""""""""""""""""""""""""""
 " Usage: <C-p>
 Bundle 'ctrlp.vim'
+
 let g:ctrlp_working_path_mode = 'ra'
 if has('unix')
 	set wildignore+=*.o,*.out,*.so,*.swp,*.zip	" MacOSX/Linux
@@ -183,17 +181,14 @@ if has('mac')
 	Bundle 'rizzatti/dash.vim'
 endif
 
-" 語法檢查
+""""""""""""""""""""""""""""""""""""""""
+" Others
+""""""""""""""""""""""""""""""""""""""""
 Bundle 'scrooloose/syntastic'
 Bundle 'plasticboy/vim-markdown'
-" 語法檢查
 Bundle 'FuzzyFinder'
 Bundle 'cocoa.vim'
-" grep
 Bundle 'ack.vim'
 Bundle 'grep.vim'
-" html
 Bundle 'ZenCoding.vim'
 Bundle 'lazywei/vim-doc-tw'
-" Bundle 'c.vim'
-" Bundle 'git://git.wincent.com/command-t.git'
