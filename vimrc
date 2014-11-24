@@ -183,6 +183,17 @@ endif
 Plugin 'majutsushi/tagbar'
 nmap <F8> :TagbarToggle<CR>
 
+
+""""""""""""""""""""""""""""""""""""""""
+" Buffergator
+""""""""""""""""""""""""""""""""""""""""
+" Usage: <Leader>b
+"        <ENTER> to edit the selected buffer in the previous window
+"        <C-V> to edit the selected buffer in a new vertical split
+"        <C-S> to edit the selected buffer in a new horizontal split
+"        <C-T> to edit the selected buffer in a new tab page
+Plugin 'jeetsukumaran/vim-buffergator'
+
 """"""""""""""""""""""""""""""""""""""""
 " Others
 """"""""""""""""""""""""""""""""""""""""
