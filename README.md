@@ -21,7 +21,7 @@ or fetch (for FreeBSD):
 
 Install vim Plug-ins
 
-	vim +BundleInstall +qall
+	vim +PluginInstall +qall
 
 ## Uninstall
 __________

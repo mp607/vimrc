@@ -5,6 +5,6 @@ cd ~/.vim/
 git pull -q
 
 echo "Updating plug-ins ..."
-vim +BundleUpdate +qall
+vim +PluginUpdate +qall
 
 echo "done"

@@ -25,5 +25,5 @@ echo "Installing vundle ..."
 git clone -q http://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
 
 echo "Download complete."
-echo "Use \"vim +BundleInstall +qall\" command install all plug-ins."
+echo "Use \"vim +PluginInstall +qall\" command install all plug-ins."
 echo "Or use ~/.vim/setup.sh to do more settings."

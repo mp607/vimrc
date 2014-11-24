@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # Install vim plug-ins
-vim +BundleInstall +qall
+vim +PluginInstall +qall
 
 # Set github username for Gist
 read -p "Please input your github username [default: $LOGNAME]: " GITHUBUSER

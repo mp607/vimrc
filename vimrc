@@ -1,15 +1,15 @@
 """"""""""""""""""""""""""""""""""""""""
 " vundle
 """"""""""""""""""""""""""""""""""""""""
-" Usage: :BundleList          - list configured bundles
-"        :BundleInstall(!)    - install(update) bundles
-"        :BundleSearch(!) foo - search(or refresh cache first) for foo
-"        :BundleClean(!)      - confirm(or auto-approve) removal of unused bundles
+" Usage: :PluginList       - lists configured plugins
+"        :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
+"        :PluginSearch foo - searches for foo; append `!` to refresh local cache
+"        :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
 set nocompatible	" be iMproved
 filetype off		" required!
 set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
-Bundle 'gmarik/vundle'
+call vundle#begin()
+Plugin 'gmarik/vundle'
 
 """"""""""""""""""""""""""""""""""""""""
 " General
@@ -44,11 +44,6 @@ set fileencodings=utf-8,big5,utf-16,gbk,latin1
 set fileformats=unix,dos
 
 """"""""""""""""""""""""""""""""""""""""
-" filetypes
-""""""""""""""""""""""""""""""""""""""""
-filetype plugin indent on
-
-""""""""""""""""""""""""""""""""""""""""
 " Colors
 """"""""""""""""""""""""""""""""""""""""
 syntax on
@@ -64,21 +59,21 @@ endif
 """"""""""""""""""""""""""""""""""""""""
 " powerline
 """"""""""""""""""""""""""""""""""""""""
-Bundle 'Lokaltog/vim-powerline'
+Plugin 'Lokaltog/vim-powerline'
 let g:Powerline_symbols = 'fancy'
 
 """"""""""""""""""""""""""""""""""""""""
 " easymotion
 """"""""""""""""""""""""""""""""""""""""
 " Usage: <leader><leader>w
-Bundle 'Lokaltog/vim-easymotion'
+Plugin 'Lokaltog/vim-easymotion'
 
 """"""""""""""""""""""""""""""""""""""""
 " Gist
 """"""""""""""""""""""""""""""""""""""""
 " Usage: Gist 
-Bundle 'mattn/webapi-vim'
-Bundle 'mattn/gist-vim'
+Plugin 'mattn/webapi-vim'
+Plugin 'mattn/gist-vim'
 
 let g:gist_detect_filetype = 1
 let g:gist_open_browser_after_post = 1
@@ -95,12 +90,12 @@ endif
 """"""""""""""""""""""""""""""""""""""""
 " autocomplpop + snipmate
 """"""""""""""""""""""""""""""""""""""""
-Bundle "MarcWeber/vim-addon-mw-utils"
-Bundle "tomtom/tlib_vim"
-Bundle "garbas/vim-snipmate"
-Bundle "mp607/vim-snippets"
-Bundle 'L9'
-Bundle 'othree/vim-autocomplpop'
+Plugin 'MarcWeber/vim-addon-mw-utils'
+Plugin 'tomtom/tlib_vim'
+Plugin 'garbas/vim-snipmate'
+Plugin 'mp607/vim-snippets'
+Plugin 'L9'
+Plugin 'othree/vim-autocomplpop'
 
 let g:snippets_dir = "~/.vim/bundle/snippets/"
 let g:acp_behaviorSnipmateLength = 1
@@ -109,7 +104,7 @@ let g:acp_behaviorSnipmateLength = 1
 " ctrlp
 """"""""""""""""""""""""""""""""""""""""
 " Usage: <C-p>
-Bundle 'ctrlp.vim'
+Plugin 'ctrlp.vim'
 
 let g:ctrlp_working_path_mode = 'ra'
 if has('unix')
@@ -121,13 +116,13 @@ endif
 """"""""""""""""""""""""""""""""""""""""
 " indentLine
 """"""""""""""""""""""""""""""""""""""""
-Bundle 'Yggdroot/indentLine'
+Plugin 'Yggdroot/indentLine'
 
 """"""""""""""""""""""""""""""""""""""""
 " fugitive
 """"""""""""""""""""""""""""""""""""""""
 " Usage: Gdiff, Gstatus, Gcommit, Glog
-Bundle 'tpope/vim-fugitive'
+Plugin 'tpope/vim-fugitive'
 
 """"""""""""""""""""""""""""""""""""""""
 " vim-gitgutter
@@ -135,7 +130,7 @@ Bundle 'tpope/vim-fugitive'
 " Usage: ]c          jump to next hunk
 "        [c          jump to prev hank
 "        <leader>hp  show diff
-Bundle 'airblade/vim-gitgutter'
+Plugin 'airblade/vim-gitgutter'
 
 """"""""""""""""""""""""""""""""""""""""
 " nerdcommenter
@@ -143,31 +138,31 @@ Bundle 'airblade/vim-gitgutter'
 " Usage: <leader>cc
 "        <leader>cu
 "        <leader>cm
-Bundle 'scrooloose/nerdcommenter'
+Plugin 'scrooloose/nerdcommenter'
 
 """"""""""""""""""""""""""""""""""""""""
 " vim-multiple-cursors
 """"""""""""""""""""""""""""""""""""""""
 " Usage: C-n
-Bundle 'terryma/vim-multiple-cursors'
+Plugin 'terryma/vim-multiple-cursors'
 
 """"""""""""""""""""""""""""""""""""""""
 " surround
 """"""""""""""""""""""""""""""""""""""""
 " Usage: cs"', ts"
-Bundle 'tpope/vim-surround'
+Plugin 'tpope/vim-surround'
 
 """"""""""""""""""""""""""""""""""""""""
 " VM Graphviz
 """"""""""""""""""""""""""""""""""""""""
 " Usage: Compiling <leader>ll
 "        Viewing   <leader>lv
-Bundle 'wannesm/wmgraphviz.vim'
+Plugin 'wannesm/wmgraphviz.vim'
 
 """"""""""""""""""""""""""""""""""""""""
 " SingleCompile
 """"""""""""""""""""""""""""""""""""""""
-Bundle 'xuhdev/SingleCompile'
+Plugin 'xuhdev/SingleCompile'
 
 nmap <F9> :SCCompile<cr>
 nmap <F10> :SCCompileRun<cr>
@@ -177,18 +172,21 @@ nmap <F10> :SCCompileRun<cr>
 """"""""""""""""""""""""""""""""""""""""
 " Usage: :Dash[!] [TERM] [KEYWORD]
 if has('mac')
-	Bundle 'rizzatti/funcoo.vim'
-	Bundle 'rizzatti/dash.vim'
+	Plugin 'rizzatti/funcoo.vim'
+	Plugin 'rizzatti/dash.vim'
 endif
 
 """"""""""""""""""""""""""""""""""""""""
 " Others
 """"""""""""""""""""""""""""""""""""""""
-Bundle 'scrooloose/syntastic'
-Bundle 'plasticboy/vim-markdown'
-Bundle 'FuzzyFinder'
-Bundle 'cocoa.vim'
-Bundle 'ack.vim'
-Bundle 'grep.vim'
-Bundle 'ZenCoding.vim'
-Bundle 'lazywei/vim-doc-tw'
+Plugin 'scrooloose/syntastic'
+Plugin 'plasticboy/vim-markdown'
+Plugin 'FuzzyFinder'
+Plugin 'cocoa.vim'
+Plugin 'ack.vim'
+Plugin 'grep.vim'
+Plugin 'ZenCoding.vim'
+Plugin 'lazywei/vim-doc-tw'
+
+call vundle#end()            " required
+filetype plugin indent on    " required
