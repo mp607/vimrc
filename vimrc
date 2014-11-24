@@ -176,6 +176,13 @@ if has('mac')
 	Plugin 'rizzatti/dash.vim'
 endif
 
+
+""""""""""""""""""""""""""""""""""""""""
+" Class / module browser
+""""""""""""""""""""""""""""""""""""""""
+Plugin 'majutsushi/tagbar'
+nmap <F8> :TagbarToggle<CR>
+
 """"""""""""""""""""""""""""""""""""""""
 " Others
 """"""""""""""""""""""""""""""""""""""""
