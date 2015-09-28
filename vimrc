@@ -101,6 +101,12 @@ let g:snippets_dir = "~/.vim/bundle/snippets/"
 let g:acp_behaviorSnipmateLength = 1
 
 """"""""""""""""""""""""""""""""""""""""
+" jedi-vim
+""""""""""""""""""""""""""""""""""""""""
+Plugin 'davidhalter/jedi-vim'
+let g:jedi#popup_select_first = 0
+
+""""""""""""""""""""""""""""""""""""""""
 " ctrlp
 """"""""""""""""""""""""""""""""""""""""
 " Usage: <C-p>
