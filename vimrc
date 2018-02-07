@@ -114,15 +114,22 @@ let g:jedi#use_splits_not_buffers = "left"
 """"""""""""""""""""""""""""""""""""""""
 " ctrlp
 """"""""""""""""""""""""""""""""""""""""
-" Usage: <C-p>
+" Usage: <C-p> invoke CtrlP in find file mode
+"        <C-t> to open in a new tab
+"        <C-x> to open in a new split
 Plugin 'ctrlp.vim'
 
 let g:ctrlp_working_path_mode = 'ra'
-if has('unix')
-	set wildignore+=*.o,*.out,*.so,*.swp,*.zip	" MacOSX/Linux
+if has('unix') || has('mac')
+	set wildignore+=*/tmp/*,*/undo/*,*.so,*.swp,*.zip,*.tar,*.tgz,*.pyc
 else
-	set wildignore+=*.swp,*.zip,*.exe	" Windows
+	set wildignore+=*\\tmp\\*,*.swp,*.zip,*.exe,*.pyc
 endif
+
+let g:ctrlp_custom_ignore = {
+  \ 'dir':  '\v[\/]\.(git|hg|svn|undo)$',
+  \ 'file': '\v\.(exe|so|dll|zip|tar|tgz|pyc)$',
+  \ }
 
 """"""""""""""""""""""""""""""""""""""""
 " indentLine
