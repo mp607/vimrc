@@ -100,8 +100,17 @@ let g:acp_behaviorSnipmateLength = 1
 """"""""""""""""""""""""""""""""""""""""
 " jedi-vim
 """"""""""""""""""""""""""""""""""""""""
+" Usage: <C-Space> Completion
+"		 <leader>g Goto assignments (typical goto function)
+"		 <leader>d Goto definitions (follow identifier as far as possible, includes imports and statements)
+"		 K         Show Documentation/Pydoc (shows a popup with assignments)
+"		 <leader>r Renaming
+"		 <leader>n Usages (shows all the usages of a name)
+"		 :Pyimport os Open module (opens the os module)
 Plugin 'davidhalter/jedi-vim'
-let g:jedi#popup_select_first = 0
+
+let g:jedi#popup_select_first = 1
+let g:jedi#use_splits_not_buffers = "left"
 
 """"""""""""""""""""""""""""""""""""""""
 " ctrlp
