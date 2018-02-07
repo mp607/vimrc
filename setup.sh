@@ -14,3 +14,5 @@ read -p "Login in github for Gist now? (Needed gist) (Y/n): " LOGIN
 [ "${LOGIN}" == "Y" -o "${LOGIN}" == "y" ] && gist --login
 
 echo "Vimrc is setting down. Enjoy it!"
+echo ""
+echo "Maybe you need to install ctags and jedi"
