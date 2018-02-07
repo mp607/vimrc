@@ -179,16 +179,6 @@ nmap <F9> :SCCompile<cr>
 nmap <F10> :SCCompileRun<cr>
 
 """"""""""""""""""""""""""""""""""""""""
-" Dash (Only on Mac)
-""""""""""""""""""""""""""""""""""""""""
-" Usage: :Dash[!] [TERM] [KEYWORD]
-if has('mac')
-	Plugin 'rizzatti/funcoo.vim'
-	Plugin 'rizzatti/dash.vim'
-endif
-
-
-""""""""""""""""""""""""""""""""""""""""
 " Class / module browser
 """"""""""""""""""""""""""""""""""""""""
 Plugin 'majutsushi/tagbar'
