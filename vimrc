@@ -90,11 +90,10 @@ endif
 Plugin 'MarcWeber/vim-addon-mw-utils'
 Plugin 'tomtom/tlib_vim'
 Plugin 'garbas/vim-snipmate'
-Plugin 'mp607/vim-snippets'
+Plugin 'honza/vim-snippets'
 Plugin 'L9'
 Plugin 'othree/vim-autocomplpop'
 
-let g:snippets_dir = "~/.vim/bundle/snippets/"
 let g:acp_behaviorSnipmateLength = 1
 
 """"""""""""""""""""""""""""""""""""""""
