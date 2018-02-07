@@ -153,9 +153,9 @@ Plugin 'airblade/vim-gitgutter'
 """"""""""""""""""""""""""""""""""""""""
 " nerdcommenter
 """"""""""""""""""""""""""""""""""""""""
-" Usage: <leader>cc
-"        <leader>cu
-"        <leader>cm
+" Usage: <leader>cc Comment out the current line or text selected in visual mode.
+"        <leader>cu Uncomments the selected line(s).
+"        <leader>cm Comments the given lines using only one set of multipart delimiters.
 Plugin 'scrooloose/nerdcommenter'
 
 """"""""""""""""""""""""""""""""""""""""
