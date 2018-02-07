@@ -63,12 +63,6 @@ Plugin 'Lokaltog/vim-powerline'
 let g:Powerline_symbols = 'fancy'
 
 """"""""""""""""""""""""""""""""""""""""
-" easymotion
-""""""""""""""""""""""""""""""""""""""""
-" Usage: <leader><leader>w
-Plugin 'Lokaltog/vim-easymotion'
-
-""""""""""""""""""""""""""""""""""""""""
 " Gist
 """"""""""""""""""""""""""""""""""""""""
 " Usage: Gist 
