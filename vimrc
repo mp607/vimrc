@@ -171,13 +171,6 @@ Plugin 'terryma/vim-multiple-cursors'
 Plugin 'tpope/vim-surround'
 
 """"""""""""""""""""""""""""""""""""""""
-" VM Graphviz
-""""""""""""""""""""""""""""""""""""""""
-" Usage: Compiling <leader>ll
-"        Viewing   <leader>lv
-Plugin 'wannesm/wmgraphviz.vim'
-
-""""""""""""""""""""""""""""""""""""""""
 " SingleCompile
 """"""""""""""""""""""""""""""""""""""""
 Plugin 'xuhdev/SingleCompile'
